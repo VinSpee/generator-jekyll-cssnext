@@ -40,11 +40,9 @@ gulp.task("jekyll:prod", $.shell.task("jekyll build --config _config.yml,_config
 
 // Compiles the SASS files and moves them into the "assets/stylesheets" directory
 gulp.task("styles", function () {
-  // Looks at the style.scss file for what to include and creates a style.css file
-  return gulp.src("src/assets/scss/style.scss")
-    .pipe($.sass())
-    // AutoPrefix your CSS so it works between browsers
-    .pipe($.autoprefixer("last 1 version", { cascade: true }))
+  // Looks at the style.css file for what to include and creates a style.css file
+  return gulp.src("src/assets/stylesheets/style.css")
+    .pipe($.cssnext())
     // Directory your CSS file goes to
     .pipe(gulp.dest("src/assets/stylesheets/"))
     .pipe(gulp.dest("serve/assets/stylesheets/"))
@@ -93,7 +91,7 @@ gulp.task("html", ["styles"], function () {
     // Minify CSS
     .pipe($.if("*.css", $.minifyCss()))
     // Start cache busting the files
-    .pipe($.revAll({ ignore: [".eot", ".svg", ".ttf", ".woff"] }))
+    .pipe($.revAll({ ignore: [".eot", ".svg", ".ttf", ".woff", ".woff2"] }))
     .pipe(assets.restore())
     // Conctenate your files based on what you specified in _layout/header.html
     .pipe($.useref())
@@ -235,7 +233,7 @@ gulp.task("serve:dev", ["styles", "jekyll:dev"], function () {
 gulp.task("watch", function () {
   gulp.watch(["src/**/*.md", "src/**/*.html", "src/**/*.xml", "src/**/*.txt", "src/**/*.js"], ["jekyll-rebuild"]);
   gulp.watch(["serve/assets/stylesheets/*.css"], reload);
-  gulp.watch(["src/assets/scss/**/*.scss"], ["styles"]);
+  gulp.watch(["src/assets/stylesheets/**/*.css"], ["styles"]);
 });
 
 // Serve the site after optimizations to see that everything looks fine

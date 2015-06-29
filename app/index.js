@@ -247,8 +247,6 @@ module.exports = yeoman.generators.Base.extend({
 
   scaffolding: function () {
     this.copy("Gemfile", "Gemfile");
-    this.copy("bowerrc", ".bowerrc");
-    this.copy("_bower.json", "bower.json");
     this.template("_package.json", "package.json");
     this.template("_config.yml", "_config.yml");
     this.template("_config.build.yml", "_config.build.yml");
