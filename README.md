@@ -1,13 +1,4 @@
-# generator-jekyllized [![Build Status](https://travis-ci.org/sondr3/generator-jekyllized.png?branch=master)](https://travis-ci.org/sondr3/generator-jekyllized)
-
-[![NPM version](https://badge.fury.io/js/generator-jekyllized.png)](http://badge.fury.io/js/generator-jekyllized) [![Coverage Status](https://coveralls.io/repos/sondr3/generator-jekyllized/badge.png)](https://coveralls.io/r/sondr3/generator-jekyllized) [![Code Climate](https://codeclimate.com/github/sondr3/generator-jekyllized/badges/gpa.svg)](https://codeclimate.com/github/sondr3/generator-jekyllized)
-
-### Development is happening on the [beta][beta] branch!
-
-Waiting for Jekyll 3.0 and Gulp 4.0 to land, take a look if you want to! It's
-also published on NPM under a 0.8-beta branch so you can start using it today,
-however be warned that Gulp 3.x and Gulp 4.0 does not play nice together right
-now!
+[![NPM version](https://badge.fury.io/js/generator-jekyll-cssnext.png)](http://badge.fury.io/js/generator-jekyll-cssnext)
 
 **Stylized and opinionated Jekyll development**
 
@@ -25,10 +16,8 @@ code in your project.
 
 ### Tools
 
-- SASS using [libsass][libsass]
-- [AutoPrefixer][autoprefixer] for automatic vendor prefixing
+- CSS using [cssnext][cssnext]
 - Upload your site to either Amazon S3 or to your server with Rsync
-- [Lanyon][lanyon] theme based on [Poole][poole] from [mdo][mdo]
 - Jekyll with sane configurations and lots of extras
 
 ### Developing
@@ -138,11 +127,7 @@ repositories there are some things you need to do:
 [yo]: https://github.com/yeoman/yo
 [bower]: http://bower.io/
 [gulp]: http://gulpjs.com/
-[libsass]: https://github.com/hcatlin/libsass
-[autoprefixer]: https://github.com/ai/autoprefixer
-[poole]: https://github.com/poole
-[lanyon]: https://github.com/poole/lanyon
-[mdo]: https://github.com/mdo
+[cssnext]: https://cssnext.io/
 [jshint]: http://www.jshint.com/
 [nodejs]: http://nodejs.org/
 [rubylang]: http://www.ruby-lang.org/

@@ -1,7 +1,7 @@
 {
-  "name": "generator-jekyllized",
+  "name": "generator-jekyll-cssnext",
   "version": "0.7.3",
-  "description": "Jekyll workflow with Gulp, SASS, AutoPrefixer, asset optimization and cache busting and much more. Can you really want more?",
+  "description": "Jekyll workflow with Gulp, cssnext, asset optimization and cache busting and much more. Can you really want more?",
   "keywords": [
     "yeoman-generator",
     "jekyll",
@@ -9,21 +9,21 @@
     "h5bp",
     "sass"
   ],
-  "bugs": "https://github.com/sondr3/generator-jekyllized/issues",
+  "bugs": "https://github.com/vinspee/generator-jekyll-cssnext/issues",
   "author": {
-    "name": "Sondre Nilsen",
-    "email": "nilsen.sondre@gmail.com",
-    "url": "https://github.com/sondr3"
+    "name": "Vince Speelman",
+    "email": "v@vinspee.me",
+    "url": "https://github.com/vinspee"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sondr3/generator-jekyllized.git"
+    "url": "git://github.com/sondr3/generator-jekyll-cssnext.git"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/sondr3/generator-jekyllized/blob/master/LICENSE"
+      "url": "https://github.com/vinspee/generator-jekyll-cssnext/blob/master/LICENSE"
     }
   ],
   "scripts": {
