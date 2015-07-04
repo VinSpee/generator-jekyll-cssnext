@@ -44,7 +44,6 @@ gulp.task("styles", function () {
   return gulp.src("src/assets/stylesheets/style.css")
     .pipe($.cssnext())
     // Directory your CSS file goes to
-    .pipe(gulp.dest("src/assets/stylesheets/"))
     .pipe(gulp.dest("serve/assets/stylesheets/"))
     // Outputs the size of the CSS file
     .pipe($.size({title: "styles"}))
